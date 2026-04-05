@@ -40,7 +40,9 @@ pixi add \
   ros-foxy-rosidl-default-generators \
   ros-foxy-rosidl-default-runtime \
   ros-foxy-ament-cmake \
-  libxcrypt
+  libxcrypt \
+  foonathan-memory \
+  ros-foxy-foonathan-memory-vendor
 
 # Enter the pixi environment
 pixi shell
