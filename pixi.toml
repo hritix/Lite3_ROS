@@ -1,0 +1,48 @@
+[workspace]
+channels = ["robostack", "conda-forge"]
+name = "Lite3_ROS"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[dependencies]
+# Python & Core Build Tools
+python = "3.8.*"
+compilers = ">=1.11.0,<2"
+cmake = ">=3.19.4,<4"
+pkg-config = ">=0.29.2,<0.30"
+colcon-common-extensions = ">=0.3.0,<0.4"
+libxcrypt = ">=4.4.36,<5"
+
+# Python Libraries required for ROS Message Generation
+empy = "<4.0"
+catkin_pkg = ">=1.0.0,<2"
+lark = ">=1.2.2,<2"
+
+# ROS 2 Foxy Core & Messages
+ros-foxy-ros-base = ">=0.9.2,<0.10"
+ros-foxy-rclcpp = ">=2.3.0,<3"
+ros-foxy-sensor-msgs = ">=2.0.3,<3"
+ros-foxy-nav-msgs = ">=2.0.3,<3"
+ros-foxy-geometry-msgs = ">=2.0.3,<3"
+ros-foxy-tf2-ros = ">=0.13.9,<0.14"
+ros-foxy-tf2-geometry-msgs = ">=0.13.9,<0.14"
+ros-foxy-rosidl-default-generators = ">=1.0.0,<2"
+ros-foxy-rosidl-default-runtime = ">=1.0.0,<2"
+ros-foxy-ament-cmake = ">=0.9.8,<0.10"
+
+# CLI & Launch Tools
+ros-foxy-launch-ros = ">=0.11.1,<0.12"
+ros-foxy-ros2launch = ">=0.11.1,<0.12"
+
+# FastRTPS Middleware & C++ Dependencies
+ros-foxy-rmw-fastrtps-cpp = ">=1.2.4,<2"
+foonathan-memory = ">=0.7.3,<0.8"
+ros-foxy-foonathan-memory-vendor = ">=1.0.0,<2"
+
+# Python Logging ABI Fixes
+spdlog = "1.8.*"
+fmt = "7.*"
+ros-foxy-spdlog-vendor = ">=1.1.2,<2"
+
+[activation]
+scripts = ["activate_ros.sh"]
